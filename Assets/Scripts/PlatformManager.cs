@@ -43,7 +43,7 @@ public class PlatformManager : MonoBehaviour
             transform.position.z + objeUzunlugu+ character.transform.position.z);
 
         // Engel prefab'ýný oluþtur
-        GameObject yeniEngel = Instantiate(engelPrefab, new Vector3(engelPozisyonu.x,engelPozisyonu.y,), Quaternion.identity);
+        GameObject yeniEngel = Instantiate(engelPrefab, new Vector3(engelPozisyonu.x,engelPozisyonu.y,engelPozisyonu.z), Quaternion.identity);
 
         
     }
