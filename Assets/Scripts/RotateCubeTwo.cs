@@ -39,7 +39,7 @@ public class RotateCubeTwo : MonoBehaviour
         isRotating = true;
 
         Quaternion targetRotation = Quaternion.Euler(0, 0, cubeTwo.transform.localRotation.eulerAngles.z + angle);
-        transform.DORotateQuaternion(targetRotation, 1).OnComplete(() => isRotating = false);
+        transform.DORotateQuaternion(targetRotation, 0.2f).OnComplete(() => isRotating = false);
 
         Debug.Log(cubeTwo.transform.localRotation.z + angle);
     }
