@@ -23,11 +23,11 @@ public class RotateCubeTwo : MonoBehaviour
     {
         if (!isRotating)
         {
-            if (Input.GetKeyDown(KeyCode.A))
+            if (Input.GetKeyDown(KeyCode.D))
             {
                 RotateCube(90);
             }
-            else if (Input.GetKeyDown(KeyCode.D))
+            else if (Input.GetKeyDown(KeyCode.A))
             {
                 RotateCube(-90);
             }
