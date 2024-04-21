@@ -28,7 +28,7 @@ public class SpiderController : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-            explosionParticle.gameObject.SetActive(true);
+        explosionParticle.gameObject.SetActive(true);
         this.transform.DOScale(new Vector3(0f, 0f, 0f), 1f)
         .SetEase(Ease.OutQuad); // Apply ease effect (optional)
 
