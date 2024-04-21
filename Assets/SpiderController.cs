@@ -27,8 +27,16 @@ public class SpiderController : MonoBehaviour
         
             explosionParticle.Play();
             Destroy(gameObject);
+        if (other.gameObject.CompareTag("Player"))
+        {
+            // Oyuncu nesnesine çarpýþma algýlandýðýnda canýný azalt
+            PlayerHealth playerHealth = other.gameObject.GetComponent<PlayerHealth>();
+            if (playerHealth != null)
+            {
+                playerHealth.TakeDamage(10);
+            }
+        }
 
-        
     }
 
     IEnumerator DestroyBall()
