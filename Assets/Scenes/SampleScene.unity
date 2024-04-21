@@ -586,7 +586,7 @@ GameObject:
   - component: {fileID: 993637693}
   m_Layer: 0
   m_Name: ScreenShaker
-  m_TagString: Untagged
+  m_TagString: ScreenShakeController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -604,8 +604,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraTransform: {fileID: 72572433}
-  shakeDuration: 5
-  shakeIntensity: 3
+  shakeDuration: 0.1
+  shakeIntensity: 0.3
 --- !u!4 &993637694
 Transform:
   m_ObjectHideFlags: 0
@@ -735,6 +735,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7933825453026484558, guid: e7a982ebfaf1f4d4e8946070bbedc961, type: 3}
+      propertyPath: explosionEffect
+      value: 
+      objectReference: {fileID: 2630815748524575241, guid: cb7cd9b0c56a24d49a40784bd3203ae6, type: 3}
+    - target: {fileID: 7933825453026484558, guid: e7a982ebfaf1f4d4e8946070bbedc961, type: 3}
+      propertyPath: explosionParticle
+      value: 
+      objectReference: {fileID: 19821056, guid: 079954accd64b32419ec069129c81273, type: 3}
     - target: {fileID: 9116226650409824340, guid: e7a982ebfaf1f4d4e8946070bbedc961, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.11902504

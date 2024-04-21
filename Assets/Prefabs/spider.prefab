@@ -586,6 +586,7 @@ GameObject:
   - component: {fileID: 4205555180539613636}
   - component: {fileID: 8753117588379670891}
   - component: {fileID: 1312817117835414398}
+  - component: {fileID: 1065948931163358880}
   m_Layer: 0
   m_Name: spider
   m_TagString: Enemy
@@ -652,6 +653,21 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.8456757, y: 1.6982617, z: 3.1141891}
   m_Center: {x: -0.00000011920929, y: 1.2315753, z: -0.13788223}
+--- !u!114 &1065948931163358880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2371239386207234062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f6a0d2459611a343919e4c7fcaac422, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ball: {fileID: 0}
+  explosionEffect: {fileID: 0}
+  explosionParticle: {fileID: 9125212449759046732, guid: cb7cd9b0c56a24d49a40784bd3203ae6, type: 3}
 --- !u!1 &2390913799972688327
 GameObject:
   m_ObjectHideFlags: 0

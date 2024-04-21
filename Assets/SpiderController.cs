@@ -5,23 +5,30 @@ using UnityEngine;
 public class SpiderController : MonoBehaviour
 {
     public GameObject ball;
-    GameObject explosionEffect;
+    public GameObject explosionEffect;
 
+    public ParticleSystem explosionParticle;
 
     private void Start()
     {
-        ball = GameObject.FindWithTag("explosion");
-        if(explosionEffect is not null)
-        {
-            explosionEffect = ball.GetComponent<GameObject>();
-        }
+        
     }
-
+    /*
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "ball") {
             explosionEffect.SetActive(true);
             StartCoroutine(DestroyBall());
+        }
+    }*/
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Bomb"))
+        {
+            explosionParticle.Play();
+            Destroy(gameObject);
+
         }
     }
 
