@@ -24,12 +24,11 @@ public class SpiderController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Bomb"))
-        {
+        
             explosionParticle.Play();
             Destroy(gameObject);
 
-        }
+        
     }
 
     IEnumerator DestroyBall()
