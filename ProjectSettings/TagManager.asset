@@ -8,6 +8,9 @@ TagManager:
   - ScreenShakeController
   - ball
   - explosion
+  - Money
+  - Bomb
+  - Image2
   layers:
   - Default
   - TransparentFX

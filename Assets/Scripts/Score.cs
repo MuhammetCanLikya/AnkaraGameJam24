@@ -12,6 +12,6 @@ public class Score : MonoBehaviour
     void Update()
     {
         score = (int)Time.time;
-        scoreText.text = score.ToString();
+        scoreText.text = score.ToString("0000");
     }
 }
