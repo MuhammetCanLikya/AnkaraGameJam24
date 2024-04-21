@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - ScreenShakeController
+  - ball
+  - explosion
   layers:
   - Default
   - TransparentFX
