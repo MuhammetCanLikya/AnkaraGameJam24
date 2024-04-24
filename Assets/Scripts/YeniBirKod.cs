@@ -70,6 +70,10 @@ public class YeniBirKod : MonoBehaviour
                 health2b.SetActive(true);
                 health1b.SetActive(true);
                 Debug.Log("Oyuncu öldü!");
+                Time.timeScale = 0;
+
+
+
                 break;
             default:
                 Debug.Log("Oyuncu öldü!"); // Tüm canlar bittiðinde burada uygun iþlemler yapýlabilir

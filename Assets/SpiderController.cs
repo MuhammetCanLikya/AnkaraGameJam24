@@ -57,12 +57,12 @@ public class SpiderController : MonoBehaviour
             gotHurt();
             Debug.Log("Örümcekle Karakter Çarpýþtý");
 
-            // Oyuncu nesnesine çarpýþma algýlandýðýnda canýný azalt
-            PlayerHealth playerHealth = other.gameObject.GetComponent<PlayerHealth>();
-            if (playerHealth != null)
-            {
-                playerHealth.TakeDamage(10);
-            }
+            //// Oyuncu nesnesine çarpýþma algýlandýðýnda canýný azalt
+            //YeniBirKod playerHealth = other.gameObject.GetComponent<YeniBirKod>();
+            //if (playerHealth != null)
+            //{
+            //    playerHealth.TakeDamage(10);
+            //}
         }
 
     }

@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int maxHealth = 100;
+    public int maxHealth = 3;
     private int currentHealth;
 
     private void Start()
@@ -12,10 +12,10 @@ public class PlayerHealth : MonoBehaviour
     }
 
     // Hasar alýndýðýnda bu fonksiyon çaðrýlýr
-    public void TakeDamage(int damage)
+    public void TakeDamage()
     {
         // Hasarý oyuncunun canýndan çýkar
-        currentHealth -= damage;
+        currentHealth -= 1;
 
         // Oyuncunun canýnýn negatif olmamasýný saðla
         if (currentHealth < 0)
